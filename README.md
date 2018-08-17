@@ -2,7 +2,7 @@ How to build executable:
 
 1. Run 'pyinstaller gui.py --hidden-import PyQt5.sip --noconsole'
 
-This builds a dist\gui folder to distribute
+   This builds a dist\gui folder to distribute
 
 
 How to prep dev environment:
@@ -17,4 +17,4 @@ How to prep dev environment:
 
 5. Run 'python gui.py'
 
-This runs the main ui
+   This runs the main ui
