@@ -1,3 +1,16 @@
-Pyinstaller Instructions:
-Run 'pyinstaller gui.py --hidden-import PyQt5.sip'
-This builds a dist\gui folder to distribute
+How to build executable:
+
+1. Run 'pyinstaller gui.py --hidden-import PyQt5.sip'
+
+2. This builds a dist\gui folder to distribute
+
+
+How to prep dev environment:
+
+1. Run 'pip install venv'
+
+2. Run 'virtualenv venv'
+
+3. Run 'venv\Scripts\activate'
+
+4. Run 'pip install -r requirements.txt'
