@@ -52,7 +52,7 @@ class App(QWidget):
         addrow_button.clicked.connect(self.addrow_click)
 
         self.form_layout.addRow(QLabel('Trait'), QLabel('Value'))
-        self.form_layout.addRow(QLineEdit(), QDoubleSpinBox(maximum=10))
+        self.form_layout.addRow(QLineEdit(), QDoubleSpinBox(decimals=5, maximum=10))
         self.form_layout.addRow(addrow_button)
 
         self.form_groupbox.setLayout(self.form_layout)
@@ -61,7 +61,7 @@ class App(QWidget):
         self.options_groupbox = QGroupBox('Graph Options')
         self.options_layout = QFormLayout()
 
-        self.ceiling_text = QDoubleSpinBox(value=10.00)
+        self.ceiling_text = QDoubleSpinBox(decimals=5, value=10.00)
         self.ceiling_text.valueChanged.connect(self.ceiling_changed)
 
         self.options_layout.addRow(QLabel('Graph Name'), QLineEdit())
@@ -104,7 +104,7 @@ class App(QWidget):
 
     @pyqtSlot()
     def addrow_click(self):
-        self.form_layout.insertRow(self.form_layout.rowCount() - 1, QLineEdit(), QDoubleSpinBox(maximum=float(self.ceiling_text.value())))
+        self.form_layout.insertRow(self.form_layout.rowCount() - 1, QLineEdit(), QDoubleSpinBox(decimals=5, maximum=float(self.ceiling_text.value())))
 
     @pyqtSlot()
     def ceiling_changed(self):
