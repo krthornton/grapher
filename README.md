@@ -7,7 +7,7 @@ How to build executable:
 
 How to prep dev environment:
 
-1. Run 'pip install venv'
+1. Run 'pip install virtualenv'
 
 2. Run 'virtualenv venv'
 
