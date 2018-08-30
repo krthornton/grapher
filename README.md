@@ -1,3 +1,7 @@
+Primary Requirements:
+- Python 3.6.5 (goto https://www.python.org/downloads/release/python-365/ and click "Windows x86-64 executable installer")
+
+
 How to build executable:
 
 1. Run 'pyinstaller gui.py --hidden-import PyQt5.sip --noconsole'
